@@ -18,7 +18,7 @@ html, body { height: 100%; overflow: hidden;}
 
 /* page p1*/
 #page1 { display: block; }
-#page1>.bg { background: url("../images/p1_bg.jpg") no-repeat center center; background-size: contain; }
+#page1>.bg { background: url("../images/p1_bg.jpg") no-repeat center center; background-size: 100% 100%; }
 #page1>.p1_lantern { position: absolute; top: -3.4px; right: 0; left: 0; margin: auto; background: url("../images/p1_lantern.png") no-repeat center center; background-size: 100%; width: 45vw; height: 71.2vh; font-size: 3.506rem; padding-top: 31vh; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
 #page1>.p1_lantern2 { position: absolute; top: -32vh; bottom: 0; right: 0; left: 0; margin: auto; content: ' '; width: 30vw; height: 30vw; background: #d60b3b; opacity: 0.5; border-radius: 50%; -webkit-box-shadow: 0 0 10vw 10vw #d60b3b; -moz-box-shadow: 0 0 10vw 10vw #d60b3b; -ms-box-shadow: 0 0 10vw 10vw #d60b3b; -o-box-shadow: 0 0 10vw 10vw #d60b3b; box-shadow: 0 0 10vw 10vw #d60b3b; animation: p1_lantern 2s linear infinite; -webkit-animation: p1_lantern 2s linear infinite; }
 @keyframes p1_lantern {
