@@ -37,5 +37,37 @@ window.onload = function() {
     	page1.style.display="none";
     	page2.style.display="block";
     	page3.style.display="block";
-    }, false)
-}
+    }, false);
+    page3.addEventListener("touchstart", function(e) {
+        e.preventDefault();
+        startX = e.changedTouches[0].pageX,
+        startY = e.changedTouches[0].pageY;
+    },false);
+    page3.addEventListener("touchmove", function(e) {
+        e.preventDefault();
+        moveEndX = e.changedTouches[0].pageX,
+        moveEndY = e.changedTouches[0].pageY,
+           X = moveEndX - startX,
+           Y = moveEndY - startY;
+        if (Math.abs(Y) > Math.abs(X) && Y > 0) {
+           page3.style.animation="page3_down 1s linear  forwards";
+           page2.style.animation="page2_down 1s linear  forwards";  
+           }               
+    },false);
+    page2.addEventListener("touchstart", function(e) {
+        e.preventDefault();
+        startX = e.changedTouches[0].pageX,
+        startY = e.changedTouches[0].pageY;
+    },false);
+    page2.addEventListener("touchmove", function(e) {
+        e.preventDefault();
+        moveEndX = e.changedTouches[0].pageX,
+        moveEndY = e.changedTouches[0].pageY,
+           X = moveEndX - startX,
+           Y = moveEndY - startY;
+        if (Math.abs(Y) > Math.abs(X) && Y < 0) {
+           page3.style.animation="page3_up 1s linear  forwards";
+           page2.style.animation="page2_up 1s linear  forwards";  
+           }               
+    },false);
+   }

@@ -39,6 +39,11 @@ html, body { height: 100%; overflow: hidden;}
 	0% { top: 0; }
 	100% { top: -100vh; }
 }
+@keyframes page2_down {
+	0% { top: -100vh; }
+	100% { top: 0vh; }
+}
+
 #page2>.bg { background: url("../images/p2_bg.jpg") no-repeat center center; background-size: 100% 100%; }
 #page2>.p2_circle { position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; background: url("../images/p2_circle_outer.png") no-repeat center center; background-size: 100%; width: 59.375vw; height: 59.375vw; animation: circle1 3s linear 2s infinite; -webkit-animation: circle1 3s linear 2s infinite; }
 @keyframes circle2 {
@@ -62,6 +67,10 @@ html, body { height: 100%; overflow: hidden;}
 @keyframes page3_up {
 	0% { top: 100vh; }
 	100% { top: 0vh; }
+}
+@keyframes page3_down {
+	0% { top: 0vh; }
+	100% { top: 100vh; }
 }
 #page3>.bg { background: url("../images/p3_bg.jpg") no-repeat center center; background-size: 100% 100%; }
 #page3>.p3_logo { width: 34.6875vw; height: 6.327vh; position: absolute; top: 7.82vh; left: 0; right: 0; margin: 0 auto; background: url("../images/p3_logo.png") no-repeat center center; background-size: 100%; }
