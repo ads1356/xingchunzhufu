@@ -50,8 +50,8 @@ window.onload = function() {
            X = moveEndX - startX,
            Y = moveEndY - startY;
         if (Math.abs(Y) > Math.abs(X) && Y > 0) {
-           page3.style.animation="page3_down 1s linear  forwards";
-           page2.style.animation="page2_down 1s linear  forwards";  
+           page3.style.animation="page3_down 0.5s linear  forwards";
+           page2.style.animation="page2_down 0.5s linear  forwards";  
            }               
     },false);
     page2.addEventListener("touchstart", function(e) {
@@ -66,8 +66,8 @@ window.onload = function() {
            X = moveEndX - startX,
            Y = moveEndY - startY;
         if (Math.abs(Y) > Math.abs(X) && Y < 0) {
-           page3.style.animation="page3_up 1s linear  forwards";
-           page2.style.animation="page2_up 1s linear  forwards";  
+           page3.style.animation="page3_up 0.5s linear  forwards";
+           page2.style.animation="page2_up 0.5s linear  forwards";  
            }               
     },false);
    }
