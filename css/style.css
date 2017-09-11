@@ -34,11 +34,16 @@ html, body { height: 100%; overflow: hidden;}
 #page1>.p1_words { font-size: 2.134rem; position: absolute; right: 0; bottom: 7vh; left: 0; text-align: center; color: #231815; }
 
 /* page p2*/
-#page2 { display: none; top: 0; -webkit-animation: page2_up 1s linear 5s forwards; }
+#page2 { display: none; top: 0; -webkit-animation: page2_up 1s linear 3.5s forwards; }
 @keyframes page2_up {
 	0% { top: 0; }
 	100% { top: -100vh; }
 }
+@keyframes page2_down {
+	0% { top: -100vh; }
+	100% { top: 0vh; }
+}
+
 #page2>.bg { background: url("../images/p2_bg.jpg") no-repeat center center; background-size: 100% 100%; }
 #page2>.p2_circle { position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; background: url("../images/p2_circle_outer.png") no-repeat center center; background-size: 100%; width: 59.375vw; height: 59.375vw; animation: circle1 3s linear 2s infinite; -webkit-animation: circle1 3s linear 2s infinite; }
 @keyframes circle2 {
@@ -58,10 +63,14 @@ html, body { height: 100%; overflow: hidden;}
 #page2>.p2_2016 { content: ""; position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; background: url("../images/p2_2016.png") no-repeat center center; background-size: 100%; width: 27.5vw; height: 6.24vh; }
 
 /* page p3*/
-#page3 { display: none; top: 100vh; animation: page3_up 1s linear 5s forwards; }
+#page3 { display: none; top: 100vh; animation: page3_up 1s linear 3.5s forwards; }
 @keyframes page3_up {
 	0% { top: 100vh; }
 	100% { top: 0vh; }
+}
+@keyframes page3_down {
+	0% { top: 0vh; }
+	100% { top: 100vh; }
 }
 #page3>.bg { background: url("../images/p3_bg.jpg") no-repeat center center; background-size: 100% 100%; }
 #page3>.p3_logo { width: 34.6875vw; height: 6.327vh; position: absolute; top: 7.82vh; left: 0; right: 0; margin: 0 auto; background: url("../images/p3_logo.png") no-repeat center center; background-size: 100%; }
